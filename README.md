@@ -1,7 +1,6 @@
-<div align="center">
-    <img src="./screenshots/illustration.png" alt="Social Network Developer App" width="300" height="356.5">
-    <h1>Social Network Developer App</h1>
-</div>
+
+## Social Network Developer App
+
 
 ## Project Overview
 
