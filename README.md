@@ -1,86 +1,103 @@
-## DevConnector
+<div align="center">
+    <img src="./screenshots/illustration.png" alt="Social Network Developer App" width="300" height="356.5">
+    <h1>Social Network Developer App</h1>
+</div>
 
-DevConnector is a Social Network For Developers. In this Project I have used Django and Django-Rest-Framework for Backend and React For Frontend.
+## Project Overview
 
-### Demo of this site available here [DevConnector Demo](https://devconn.netlify.com)
+The **Social Network Developer App** is a modern social networking platform designed specifically for developers. It connects developers by providing a robust environment for sharing ideas, building connections, and exploring new opportunities. This application combines the power of Django and Django-Rest-Framework for the backend with a dynamic React frontend, offering a seamless and interactive user experience.
 
-## Frontend( React )
+## Technologies
 
-#### To install dependency
+**Frontend:**
+- **React**: A JavaScript library for building user interfaces.
+- **Redux**: A state management library for React applications.
+- **React-Router-Dom**: For routing and navigation.
+- **Axios**: For making HTTP requests.
+- **Moment**: For date and time manipulation.
+- **React-Moment**: Integration with Moment.js for React.
 
+**Backend:**
+- **Django**: A high-level Python web framework for building the backend.
+- **Django-Rest-Framework**: A powerful and flexible toolkit for building Web APIs.
+
+**Development Tools:**
+- **Node.js** and **npm**: For managing JavaScript dependencies and running development scripts.
+- **Python** and **pip**: For managing Python dependencies and running Django commands.
+
+## Installation
+
+### Frontend (React)
+
+1. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+2. Start the development server:
+
+    ```bash
+    npm start
+    ```
+
+3. Build for production:
+
+    ```bash
+    npm run build
+    ```
+
+   - The `proxy` is set to `http://localhost:8000` in `package.json`. You can configure `axios.defaults.baseURL` to `https://api.example.com` if needed.
+
+### Backend (Django)
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/devmahmud/DevConnector-Django.git
+    ```
+
+2. Install the required Python packages:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Configure GitHub API credentials:
+
+    Edit `settings.py` and add your GitHub credentials:
+
+    ```python
+    GIT_CLIENT_ID = 'your github client id'
+    GIT_CLIENT_SECRET = 'your github client secret'
+    ```
+
+4. Run database migrations:
+
+    ```bash
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+
+5. Start the development server:
+
+    ```bash
+    python manage.py runserver
+    ```
+
+   The server will be accessible at `http://127.0.0.1:8000`.
+
+   - Ensure to whitelist your host origin using `django-cors-headers` for production. [See Documentation](https://pypi.org/project/django-cors-headers/)
+
+### Testing
+
+To run the tests:
+
+```bash
+python manage.py test
 ```
-npm install
-```
+### License
+This project is licensed under the MIT License.
 
-#### To start the server
-
-```
-npm start
-```
-
-#### For Production Build
-
-```
-npm run build
-```
-
-- I have used proxy `http://127.0.0.1` for axios in package.json
-- You can set axios.defaults.baseURL = `https://api.example.com` Globally
-
-## Backend( Django )
-
-#### Installing
-
-open terminal and type
-
-```
-git clone https://github.com/devmahmud/DevConnector-Django.git
-```
-
-or you can download using the url below
-
-```
-https://github.com/devmahmud/DevConnector-Django.git
-```
-
-#### Requirements
-
-To install requirements type
-
-```
-pip install -r requirements.txt
-```
-
-`To use Github api put your credentials in settings.py`
-
-```
-GIT_CLIENT_ID = 'your github client id'
-GIT_CLIENT_SECRET = 'your github client secret'
-```
-
-To migrate the database open terminal in project directory and type
-
-```
-python manage.py makemigrations
-python manage.py migrate
-```
-
-To run the program in local server use the following command
-
-```
-python manage.py runserver
-```
-
-Server will be available at `http://127.0.0.1:8000` in your browser
-
-Don't Forget to whitelist your host origin using `django-cors-header` when using in production<br>
-[See Documentation](https://pypi.org/project/django-cors-headers/)
-
-#### Author
-
-<blockquote>
-Mahmudul alam<br>
-Email: expelmahmud@gmail.com
-</blockquote>
-
-========Thank You !!!=========
+### Author
+Developed by Marcus Wilkes
